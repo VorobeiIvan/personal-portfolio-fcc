@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header id="header">
+    <header id="navbar">
       <nav id="nav">
         <ul class="nav-list">
           <li>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#welcome-section">About</a>
           </li>
           <li>
-            <a class="nav-link" href="#work">Work</a>
+            <a class="nav-link" href="#projects">Work</a>
           </li>
           <li>
             <a class="nav-link" href="#contact">Contact</a>
@@ -23,16 +23,16 @@
       </nav>
     </header>
     <main>
-      <section id="about">
+      <section id="welcome-section">
         <h1 >Hey I am Mimic</h1>
         <p class="intro">a web developer</p>
       </section>
-      <section id="work">
-        <h2>These are some of my projects</h2>
-        <ul>
+      <section id="projects">
+        <h2 class="work-title">These are some of my projects</h2>
+        <ul class="work-list">
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -40,13 +40,13 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -54,13 +54,13 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -68,13 +68,13 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -82,13 +82,13 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -96,13 +96,13 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
           <li>
-            <div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="work-item-container">
+              <a class="work-link" href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://picsum.photos/seed/picsum/200/300"
                   alt="Image of a project"
@@ -110,86 +110,77 @@
                   height="200px"
                   loading="lazy"
                 />
-                <p>Project Title</p>
+                <h3 class="project-title"><span class="hover "><</span> Project Title <span class="hover ">/></span> </h3>
               </a>
             </div>
           </li>
         </ul>
-        <a href="https://codepen.io/FreeCodeCamp/"
-          >Show all
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M6 2.8305L7.182 1.5L18 12L7.182 22.5L6 21.1695L15.447 12L6 2.8305Z"
-              fill="black"
-            />
-          </svg>
+        <a class="show-all" href="https://codepen.io/FreeCodeCamp/"
+          >Show all <span class="arrow">></span>
         </a>
       </section>
       <section id="contact">
-        <div>
-          <h2>Let's work together...</h2>
-          <p>How do you take your coffee?</p>
+        <div class="contact-info">
+          <h2 class="contact-title">Let's work together...</h2>
+          <p class="contact-text">How do you take your coffee?</p>
         </div>
-        <ul>
+        <ul class="social-links-list">
           <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M5.016 4.19556H18.8445C19.3132 4.19556 19.7355 4.61781 19.7355 5.08656V18.9151C19.7355 19.3838 19.3132 19.8061 18.8445 19.8061H5.016C4.54725 19.8061 4.125 19.3838 4.125 18.9151V5.08656C4.125 4.61781 4.54725 4.19556 5.016 4.19556ZM15.2108 12.9608H17.367L17.4608 10.8983H15.2108V9.37506C15.2108 8.78931 15.3278 8.46081 16.0778 8.46081H17.3903L17.4375 6.53856C17.4375 6.53856 16.8517 6.44481 16.008 6.44481C13.9455 6.44481 13.0312 7.73406 13.0312 9.11706V10.8983H11.508V12.9608H13.0312V18.6796H15.2108V12.9608Z"
-                fill="black"
-              />
-            </svg>
-            <a href="#" target="_blank" rel="noopener noreferrer"> Facebook </a>
-          </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_75_184)">
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">  <svg
+              class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
                 <path
-                  d="M12 2.00007C9.61864 1.99109 7.31224 2.83222 5.49577 4.37214C3.67929 5.91205 2.47198 8.04965 2.09104 10.4004C1.71011 12.7511 2.18056 15.1605 3.41776 17.1953C4.65495 19.2301 6.57767 20.7565 8.83999 21.5001C9.33999 21.5801 9.49999 21.2701 9.49999 21.0001V19.3101C6.72999 19.9101 6.13999 18.0001 6.13999 18.0001C5.95323 17.379 5.54839 16.8463 4.99999 16.5001C4.08999 15.8801 5.06999 15.9001 5.06999 15.9001C5.38389 15.9407 5.68455 16.0517 5.94949 16.2249C6.21444 16.398 6.43681 16.6289 6.59999 16.9001C6.87777 17.394 7.33931 17.7583 7.88425 17.9137C8.42918 18.0691 9.01345 18.0031 9.50999 17.7301C9.55555 17.2231 9.77867 16.7486 10.14 16.3901C7.99999 16.1701 5.61999 15.3101 5.61999 11.5001C5.59106 10.5015 5.94938 9.53048 6.61999 8.79007C6.31553 7.92951 6.3513 6.98514 6.71999 6.15007C6.71999 6.15007 7.55999 5.88007 9.46999 7.15007C11.1076 6.70985 12.8324 6.70985 14.47 7.15007C16.38 5.86007 17.22 6.15007 17.22 6.15007C17.5887 6.98514 17.6244 7.92951 17.32 8.79007C17.9906 9.53048 18.3489 10.5015 18.32 11.5001C18.32 15.3201 15.98 16.1601 13.75 16.4101C13.9902 16.6515 14.176 16.9414 14.295 17.2605C14.414 17.5795 14.4634 17.9204 14.44 18.2601V21.0001C14.44 21.2701 14.6 21.5901 15.11 21.5001C17.3682 20.7578 19.2881 19.2355 20.5256 17.206C21.763 15.1764 22.2371 12.7725 21.8627 10.4251C21.4883 8.07773 20.29 5.94048 18.4826 4.39656C16.6753 2.85265 14.377 2.00304 12 2.00007Z"
-                  fill="url(#paint0_linear_75_184)"
+                  d="M5.016 4.19556H18.8445C19.3132 4.19556 19.7355 4.61781 19.7355 5.08656V18.9151C19.7355 19.3838 19.3132 19.8061 18.8445 19.8061H5.016C4.54725 19.8061 4.125 19.3838 4.125 18.9151V5.08656C4.125 4.61781 4.54725 4.19556 5.016 4.19556ZM15.2108 12.9608H17.367L17.4608 10.8983H15.2108V9.37506C15.2108 8.78931 15.3278 8.46081 16.0778 8.46081H17.3903L17.4375 6.53856C17.4375 6.53856 16.8517 6.44481 16.008 6.44481C13.9455 6.44481 13.0312 7.73406 13.0312 9.11706V10.8983H11.508V12.9608H13.0312V18.6796H15.2108V12.9608Z"
+                  fill="currentColor"
                 />
-              </g>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_75_184"
-                  x1="11.9749"
-                  y1="2"
-                  x2="11.9749"
-                  y2="21.5156"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#591C82" stop-opacity="0.27" />
-                  <stop offset="1" stop-color="#880ADC" />
-                </linearGradient>
-                <clipPath id="clip0_75_184">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <a href="#" target="_blank" rel="noopener noreferrer"> Github </a>
+              </svg> Facebook </a>
           </li>
           <li>
-            <svg
+           
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"> <svg
+              class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_75_184)">
+                  <path
+                    d="M12 2.00007C9.61864 1.99109 7.31224 2.83222 5.49577 4.37214C3.67929 5.91205 2.47198 8.04965 2.09104 10.4004C1.71011 12.7511 2.18056 15.1605 3.41776 17.1953C4.65495 19.2301 6.57767 20.7565 8.83999 21.5001C9.33999 21.5801 9.49999 21.2701 9.49999 21.0001V19.3101C6.72999 19.9101 6.13999 18.0001 6.13999 18.0001C5.95323 17.379 5.54839 16.8463 4.99999 16.5001C4.08999 15.8801 5.06999 15.9001 5.06999 15.9001C5.38389 15.9407 5.68455 16.0517 5.94949 16.2249C6.21444 16.398 6.43681 16.6289 6.59999 16.9001C6.87777 17.394 7.33931 17.7583 7.88425 17.9137C8.42918 18.0691 9.01345 18.0031 9.50999 17.7301C9.55555 17.2231 9.77867 16.7486 10.14 16.3901C7.99999 16.1701 5.61999 15.3101 5.61999 11.5001C5.59106 10.5015 5.94938 9.53048 6.61999 8.79007C6.31553 7.92951 6.3513 6.98514 6.71999 6.15007C6.71999 6.15007 7.55999 5.88007 9.46999 7.15007C11.1076 6.70985 12.8324 6.70985 14.47 7.15007C16.38 5.86007 17.22 6.15007 17.22 6.15007C17.5887 6.98514 17.6244 7.92951 17.32 8.79007C17.9906 9.53048 18.3489 10.5015 18.32 11.5001C18.32 15.3201 15.98 16.1601 13.75 16.4101C13.9902 16.6515 14.176 16.9414 14.295 17.2605C14.414 17.5795 14.4634 17.9204 14.44 18.2601V21.0001C14.44 21.2701 14.6 21.5901 15.11 21.5001C17.3682 20.7578 19.2881 19.2355 20.5256 17.206C21.763 15.1764 22.2371 12.7725 21.8627 10.4251C21.4883 8.07773 20.29 5.94048 18.4826 4.39656C16.6753 2.85265 14.377 2.00304 12 2.00007Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_75_184"
+                    x1="11.9749"
+                    y1="2"
+                    x2="11.9749"
+                    y2="21.5156"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#591C82" stop-opacity="0.27" />
+                    <stop offset="1" stop-color="#880ADC" />
+                  </linearGradient>
+                  <clipPath id="clip0_75_184">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> Github </a>
+          </li>
+          <li>
+           
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">  <svg
+            class="social-icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -197,45 +188,45 @@
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M19.7828 3.91825C20.1313 3.83565 20.3743 3.75444 20.5734 3.66915C20.8524 3.54961 21.0837 3.40641 21.4492 3.16524C21.7563 2.96255 22.1499 2.9449 22.4739 3.11928C22.7979 3.29366 23 3.6319 23 3.99986C23 5.08079 22.8653 5.96673 22.5535 6.7464C22.2911 7.40221 21.9225 7.93487 21.4816 8.41968C21.2954 11.7828 20.3219 14.4239 18.8336 16.4248C17.291 18.4987 15.2386 19.8268 13.0751 20.5706C10.9179 21.3121 8.63865 21.4778 6.59672 21.2267C4.56818 20.9773 2.69306 20.3057 1.38607 19.2892C1.02815 19.0108 0.902328 18.5264 1.07953 18.109C1.25673 17.6916 1.69258 17.4457 2.14146 17.5099C3.42743 17.6936 4.66532 17.4012 5.68322 16.9832C5.48284 16.8742 5.29391 16.7562 5.1183 16.6346C4.19077 15.9925 3.44242 15.1208 3.10559 14.4471C2.9662 14.1684 2.96476 13.8405 3.1017 13.5606C3.17234 13.4161 3.27564 13.293 3.40106 13.1991C2.04679 12.0814 1.50001 10.5355 1.50001 9.49986C1.50001 9.19192 1.64189 8.90115 1.88461 8.71165C1.98667 8.63197 2.10177 8.57392 2.2231 8.53896C2.12176 8.24222 2.04312 7.94241 1.98318 7.65216C1.71741 6.3653 1.741 4.91284 2.02987 3.75733C2.12872 3.36191 2.45766 3.06606 2.86131 3.00952C3.26495 2.95299 3.66252 3.14709 3.8662 3.50014C4.94371 5.36782 6.93118 6.50943 8.78088 7.18568C9.65052 7.50362 10.4559 7.70622 11.0596 7.83078C11.1899 6.61019 11.5307 5.6036 12.0538 4.80411C12.7439 3.74932 13.7064 3.12525 14.74 2.84698C16.5227 2.36708 18.5008 2.91382 19.7828 3.91825ZM10.7484 9.80845C10.0633 9.67087 9.12173 9.43976 8.09414 9.06408C6.73692 8.56789 5.1609 7.79418 3.84074 6.59571C3.86437 6.81625 3.89791 7.03492 3.94185 7.24766C4.1631 8.31899 4.57422 8.91899 4.94723 9.10549C5.40344 9.3336 5.61486 9.8685 5.43789 10.3469C5.19829 10.9946 4.56811 11.0477 3.99553 10.9046C4.45605 11.595 5.28379 12.2834 6.66441 12.5135C7.14059 12.5929 7.4921 13.0011 7.49988 13.4838C7.50767 13.9665 7.16951 14.3858 6.69613 14.4805L5.82567 14.6546C5.95883 14.7703 6.10302 14.8838 6.25672 14.9902C6.95364 15.4727 7.65337 15.6808 8.25747 15.5298C8.70992 15.4167 9.18049 15.6313 9.39165 16.0472C9.6028 16.463 9.49847 16.9696 9.14019 17.2681C8.49627 17.8041 7.74427 18.2342 6.99059 18.5911C6.63677 18.7587 6.24136 18.9241 5.81192 19.0697C6.1422 19.1402 6.48588 19.198 6.8408 19.2417C8.61138 19.4594 10.5821 19.3126 12.4249 18.6792C14.2614 18.0479 15.9589 16.9385 17.2289 15.2312C18.497 13.5262 19.382 11.1667 19.5007 7.96291C19.51 7.71067 19.6144 7.47129 19.7929 7.29281C20.2425 6.84316 20.6141 6.32777 20.7969 5.7143C20.477 5.81403 20.1168 5.90035 19.6878 5.98237C19.3623 6.04459 19.0272 5.94156 18.7929 5.70727C18.0284 4.94274 16.5164 4.43998 15.2599 4.77822C14.6686 4.93741 14.1311 5.28203 13.7274 5.89906C13.3153 6.52904 13 7.51045 13 8.9999C13 9.28288 12.8801 9.5526 12.6701 9.74221C12.1721 10.1917 11.334 9.92603 10.7484 9.80845Z"
-                fill="#0F0F0F"
+                fill="currentColor"
               />
-            </svg>
-            <a href="#" target="_blank" rel="noopener noreferrer"> Twitter </a>
+            </svg> Twitter </a>
           </li>
           <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-            >
-              <path
-                d="M14 10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10C6 7.79086 7.79086 6 10 6C12.2091 6 14 7.79086 14 10ZM14 10V11.5C14 12.8807 15.1193 14 16.5 14C17.8807 14 19 12.8807 19 11.5V10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19H14"
-                stroke="black"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Send a mail
+            
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+              <svg
+              class="social-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M14 10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10C6 7.79086 7.79086 6 10 6C12.2091 6 14 7.79086 14 10ZM14 10V11.5C14 12.8807 15.1193 14 16.5 14C17.8807 14 19 12.8807 19 11.5V10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19H14"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>  Send a mail
             </a>
           </li>
           <li>
-            <svg
+           
+            <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"> <svg
+              class="social-icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
               viewBox="0 0 40 40"
               fill="none"
-            >
-              <path
-                d="M24.8248 6H15.8001C14.2562 6 13 7.25655 13 8.8013V30.1987C13 31.7433 14.2562 33 15.8001 33H24.8248C26.3689 33 27.625 31.7432 27.625 30.1989V8.8013C27.625 7.25655 26.3689 6 24.8248 6ZM20.3125 31.3453C19.6868 31.3453 19.1778 30.836 19.1778 30.2101C19.1778 29.5841 19.6868 29.075 20.3125 29.075C20.9381 29.075 21.4472 29.5841 21.4472 30.2101C21.4472 30.836 20.9381 31.3453 20.3125 31.3453ZM25.9673 9.54749V27.4854H14.6577V9.54749H25.9673Z"
-                fill="#475C6F"
-                fill-opacity="0.6"
-              />
-            </svg>
-            <a href="#" target="_blank" rel="noopener noreferrer"> Call me </a>
+              >
+                <path
+                  d="M24.8248 6H15.8001C14.2562 6 13 7.25655 13 8.8013V30.1987C13 31.7433 14.2562 33 15.8001 33H24.8248C26.3689 33 27.625 31.7432 27.625 30.1989V8.8013C27.625 7.25655 26.3689 6 24.8248 6ZM20.3125 31.3453C19.6868 31.3453 19.1778 30.836 19.1778 30.2101C19.1778 29.5841 19.6868 29.075 20.3125 29.075C20.9381 29.075 21.4472 29.5841 21.4472 30.2101C21.4472 30.836 20.9381 31.3453 20.3125 31.3453ZM25.9673 9.54749V27.4854H14.6577V9.54749H25.9673Z"
+                  fill="currentColor"
+                />
+              </svg> Call me </a>
           </li>
         </ul>
       </section>
@@ -248,7 +239,7 @@
       </p>
       <p>
         &copy; Created for
-        <a class="footer-link" target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org">
+        <a id="profile-link" target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org">
           freeCodeCamp
           <svg
             class="footer-icon-link"
